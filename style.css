@@ -1,0 +1,12 @@
+/*
+Theme Name: Boot Start
+Theme URI: http://www.e-logic.fr/
+Description: The first theme created by David Dorlet.
+Version: 0.1
+Author: David Dorlet
+ 
+*/
+
+@import url('css/bootstrap.css'); 
+@import url('css/bootstrap-responsive.css'); 
+@import url('css/docs.css'); 
