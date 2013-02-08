@@ -210,8 +210,8 @@
     float: left;
     width: 100%;
     min-height: 30px;
-    margin-left: 2.564102564102564%;
-    *margin-left: 2.5109110747408616%;
+    margin-left: 1%;
+    *margin-left: 1%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -220,8 +220,15 @@
     margin-left: 0;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 2.564102564102564%;
+    margin-left: 2%;
   }
+
+  .row-fluid [class*="span"] .col {
+    margin-left: 0;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
+
   .row-fluid .span12 {
     width: 100%;
     *width: 99.94680851063829%;

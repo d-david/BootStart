@@ -8,24 +8,23 @@ if ( function_exists( 'add_theme_support' )) {
           add_theme_support( 'post-thumbnails' );
      }
 
-add_filter( 'ot_theme_mode', '__return_true' );
-add_filter( 'ot_show_pages', '__return_true' );
+// theme options
+get_template_part('nhp', 'options');
 
-/**
- * Required: include OptionTree.
- */
-include_once( 'option-tree/ot-loader.php' );
-/**
- * Theme Options
- */
-include_once( 'includes/theme-options.php' );
 
 // Create Slider Post Type
 require(get_template_directory() . '/slider/slider_post_type.php' );
 // Create Slider
 require(get_template_directory() . '/slider/slider.php' );
 
+//Add shortcodes 
+include('shortcodes.php');
 
+// content <p> issue 
+remove_filter ('the_content', 'wpautop');
+
+
+// widgets 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name' => 'Sidebar-right',

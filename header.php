@@ -25,8 +25,7 @@
 </head>
 <body <?php body_class(); ?>  data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="10">
     
-
-	<div id="page">
+<div id="page">
 
 		<header class="jumbotron subhead" id="overview">
 			<div class="container">

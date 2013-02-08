@@ -69,13 +69,6 @@
         // Reset Post Data
         wp_reset_postdata();
     }
-    // Slider Shortcode
  
-    function dd_slider_shortcode() {
-        ob_start();
-        dd_slider_template();
-        $slider = ob_get_clean();
-        return $slider;
-    }
-    add_shortcode( 'slider', 'dd_slider_shortcode' );
+    
 
