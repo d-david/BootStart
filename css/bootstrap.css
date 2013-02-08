@@ -717,13 +717,21 @@ a.text-success:hover {
 
 h1,
 h2,
-h3,
+h3 {
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
 h4,
 h5,
 h6 {
+  font-weight: bold;
   margin: 10px 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   line-height: 20px;
   color: inherit;
   text-rendering: optimizelegibility;
